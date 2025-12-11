@@ -1,0 +1,55 @@
+site_name: David David
+site_url: https://dcdavid.net
+site_author: David David
+site_description: Portfolio of David David, Data Engineer and MSCS Student.
+
+# Copyright Footer
+copyright: Copyright &copy; 2025 David David
+
+# Theme Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs        # Top-level tabs
+    - navigation.instant     # SPA-like loading
+    - navigation.tracking    # URL updates as you scroll
+    - navigation.sections    # Group sidebars
+    - toc.integrate          # Integrate Table of Contents
+    - content.code.copy      # Copy button on code blocks
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+# Plugins (Search only)
+plugins:
+  - search
+
+# Navigation
+nav:
+  - Home: index.md
+  - Projects:
+      - ARC-AGI Agent: projects/kbai-arc.md
+      - Algorithmic Trading: projects/ml4t-strategy.md
+      - AI Bias Mitigation: projects/aies-bias.md
+  - Resume: resume.md
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
